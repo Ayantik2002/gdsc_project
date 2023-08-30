@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { UilMapMarker } from "@iconscout/react-unicons";
 
 function Card(props) {

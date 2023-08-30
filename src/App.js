@@ -15,12 +15,7 @@ function App() {
         }
         const data = await response.json();
 
-        const modifiedData = data.content.data.map((conference) => ({
-          ...conference,
-          enroll: Math.floor(Math.random() * (20000 - 10000 + 1)) + 10000,
-        }));
-
-        setConferences(modifiedData);
+        setConferences(data.content.data);
       } catch (error) {
         console.error("Error fetching conference data:", error);
       }
